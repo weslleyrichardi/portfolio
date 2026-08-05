@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+#root {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0px 0px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.media-icons {
+  background-color: white;
+  padding: 0%;
+  transition: 0.25s;
+}
+
+.media-icons > img {
+  margin: 8PX;
+}
+
+.media-icons:hover {
+  background-color: #171717;
+}
+
+.media-icons:hover > img {
+  filter: invert();
+}
+
+.changer-theme {
+  background-color: black;
+}
+
+.changer-theme:hover {
+  background-color: #171717;
+}
+
+.line {
+  margin: 4px 0 4px 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(163, 179, 255, 1) 50%, rgba(0, 0, 0, 1) 99%);
+}
