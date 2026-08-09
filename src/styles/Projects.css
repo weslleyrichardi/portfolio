@@ -1,0 +1,64 @@
+.sticky-effect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 100lvh;
+    margin-bottom: 198px;
+    
+}
+
+.project-box, .project-card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: inset 0 1px #ffffff90;
+    border: 1px solid transparent;
+    height: 100%;
+    background-color: #232323;
+    padding: 24px;
+}
+
+
+.project-box::after, .project-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom, #ffffff4b, transparent);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.project-card {
+    flex-direction: column;
+    justify-content: normal;
+    align-items: start;
+    text-align: left;
+    gap: 16px;
+    margin: 16px 16px 16px 0;
+}
+
+.project-box {
+    margin: 16px;
+}
+
+.box-image-projects {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+}
+
+.box-image-projects img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+    border: 1px solid transparent;
+}
