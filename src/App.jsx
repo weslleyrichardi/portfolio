@@ -1,21 +1,14 @@
 'use client';
-import InfinityLIst from './app/home/inicialBanner/InfinityList';
-import Header from './app/home/inicialBanner/Header';
-import Projects from './app/home/projects/Projects';
 import './App.css';
-import "/Moon.png";
-import InitialBanner from './app/home/inicialBanner/InitialBanner';
+import InitialBanner from './app/home/section_1/InitialBanner';
+import AboutMe from './app/home/section_2/AboutMe';
 
 function App() {
-
   return (
-     <body>
+     <div>
         <InitialBanner></InitialBanner>
-        <div class='line'></div>
-          <InfinityLIst></InfinityLIst>
-        <div class='line'></div>
-        <Projects></Projects>
-     </body>
+        <AboutMe></AboutMe>
+     </div>
     
   )
 }

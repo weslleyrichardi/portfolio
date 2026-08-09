@@ -28,8 +28,7 @@ export default function Projects() {
                             trigger: '#split',
                             scrub: 1
                         },
-                        duration: 1, 
-                        markers: true,
+                        duration: 1,
                         y: 100,
                         autoAlpha: 0, 
                         stagger: 0.05,
@@ -38,14 +37,13 @@ export default function Projects() {
                     gsap.from(split.chars, {
                         scrollTrigger: {
                             start: "top ",
-                            end: "center ",
+                            end: "center",
                             toggleActions: "play play reverse reverse",
                             scrub: 1,
                             stagger: 0.05
                         },
                         duration: 1,
                         y: 100,
-                        autoAlpha: 0,
                         stagger: 0.05 
                     })
                 }
@@ -54,12 +52,12 @@ export default function Projects() {
     })
     
     return (
-        <section className="mt-10">
+        <section>
             <h1 id='split' className='text-2xl sm:text-4xl md:text-5xl font-extrabold mb-4 z-10'>Projects</h1>
             <div className="flex flex-row">
                 <div className='w-[65%]'>
                     <div className='sticky-effect'>
-                        <div className='project-box'>
+                        <div className='project-box'> 
                             <div className='box-image-projects bg-blue-900 relative rounded-2xl overflow-hidden'>
                                 <img src="/ise2025.org-1.png" alt="Image 1 from ise2025.org web site" className='w-200 h-130 mt-auto rounded-2xl'/>
                                 <img src="/ise2025.org-2.png" alt="Image 2 from ise2025.org web site" className='w-[35%] absolute right-26 -bottom-12 rotate-16 rounded-2xl'/>
