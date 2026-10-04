@@ -12,9 +12,9 @@ export default function Projects() {
         let matchMedia = gsap.matchMedia();
 
         matchMedia.add({
-                isMobile: "(max-width: 767px)", // Tailwind: sm
-                isTablet: "(min-width: 768px)", // Tailwind: md
-                isDesktop: "(min-width: 1024px)" // Tailwind: lg
+                isMobile: "(max-width: 767px)",
+                isTablet: "(min-width: 768px)",
+                isDesktop: "(min-width: 1024px)"
 
             }, (context) => {
                 let {isDesktop} = context.conditions;

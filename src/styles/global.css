@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Changa+One:ital@0;1&display=swap');
+
+@font-face { 
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'BBH Hegarty';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/bbh-hegarty-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.bbh-hegarty-regular {
+  font-family: "BBH Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gold-gradient {
+    background-image: linear-gradient(to bottom right, #C47E02, #D49A23, #F3CE63, #FBE68D, #C47E02);
+}
+
+.purple-gradient {
+    background-image: linear-gradient(to right bottom, #FFA8F5, #FF90F9, #EB54E4, #71006F, #832780);
+}
+
+.purple-gradient-text {
+    background-image: linear-gradient(to right bottom, #FFA8F5, #FF90F9, #EB54E4, #b600b3, #862a83);
+    -webkit-background-clip: text; /* Recorta o fundo no formato do texto */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Faz o texto original ficar transparente para revelar o gradiente */
+}
+
+
+.gold-button {
+    width: 56px;
+    height: 56px;
+    background-color: #321961;
+    border-radius: 9999px;
+    box-shadow: inset 1px 1px 1px 0px #E2E8F0, 1px 1px 1px 0px #E2E8F0;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease; 
+}
+
+.gold-button:hover {
+    opacity: 0.8;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 800;
+    font-family: Arial;
+}
