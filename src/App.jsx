@@ -1,16 +1,15 @@
-'use client';
-import './App.css';
 import InitialBanner from './app/home/section_1/InitialBanner';
 import AboutMe from './app/home/section_2/AboutMe';
+import Trajectory from './app/home/section_3/trajectory';
 
 function App() {
   return (
-     <div>
-        <InitialBanner></InitialBanner>
-        <AboutMe></AboutMe>
-     </div>
-    
+     <>
+         <InitialBanner/>
+         <AboutMe/>
+         <Trajectory/>
+     </>
   )
 }
 
-export default App
+export default App;
